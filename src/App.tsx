@@ -50,7 +50,7 @@ function App() {
               <h3>In Theaters</h3>
               <MoviesList movies={movies.inTheaters} />
               <hr />
-              <h3>Upcoming Releases</h3>
+              <h3>Upcoming Releases     </h3>
               <MoviesList movies={movies.upcomingReleases} />
             </Route>
 
