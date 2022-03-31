@@ -20,16 +20,16 @@ const routes = [
   
   { path: "/actors", component: IndexActors, exact: true },
   { path: "/actors/create", component: CreateActor },
-  { path: "/actors/edit", component: EditActor },
+  { path: "/actors/edit/:id(\\d+)", component: EditActor },
 
   
   { path: "/movietheaters", component: IndexMovieTheaters, exact: true },
   { path: "/movietheaters/create", component: CreateMovieTheater },
   { path: "/movietheaters/edit", component: EditMovieTheater },
 
-  { path: "/movie/create", component: CreateMovie},
-  { path: "/movie/edit", component: EditMovie },
-  { path: "/movie/filter", component: FilterMovies },
+  { path: "/movies/create", component: CreateMovie, exact: true},
+  { path: "/movies/edit", component: EditMovie },
+  { path: "/movies/filter", component: FilterMovies },
 
   { path: "/", component:LandingPage, exact: true },
   { path: "*", component:RedirectToLandingPage },
