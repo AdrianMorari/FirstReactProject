@@ -5,8 +5,11 @@ export default function EditActor() {
     <>
       <h3>Edit Actor</h3>
       <ActorForm
-        model={{ name: 'Tom Hanks', dateOfBirth: new Date('1956-03-13') }}
-        onSubmit={values => console.log(values)}
+        model={{ name: 'Tom Hanks',
+        dateOfBirth: new Date('1956-07-09'),
+        pictureURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Tom_Hanks_TIFF_2019.jpg/220px-Tom_Hanks_TIFF_2019.jpg'
+      }}
+        onSubmit={(values) => console.log(values)}
       />
     </>
   );
