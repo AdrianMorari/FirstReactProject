@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+import MovieForm from "./MovieForm";
 
 export default function CreateMovie() {
   return (
     <>
       <h3>Create movie</h3>
-      <Link className="btn btn-primary" to="/movie/create">
-        Create movie
-      </Link>
+      <MovieForm
+        model={{ title: "", inTheaters: false, trailer: "" }}
+        onSubmit={(values) => console.log(values)}
+      />
     </>
   );
 }

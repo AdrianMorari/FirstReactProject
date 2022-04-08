@@ -5,7 +5,7 @@ export default function EditMovieTheater() {
     <>
       <h3>Edit movie theater</h3>
       <MovieTheaterForm
-        model={{ name: "test" }}
+        model={{ name: "Patria", latitude: 47.02713154619099, longitude: 28.82852930175432}}
         onSubmit={(values) => console.log(values)}
       />
     </>
