@@ -6,6 +6,7 @@ import { Form, Formik, FormikHelpers } from "formik";
 import { actorCreationDTO } from "./actors.model";
 import DateField from "../forms/DateField";
 import ImageField from "../forms/ImageField";
+import MarkdownField from "../forms/MarkdownField";
 
 export default function ActionForm(props: actorFormProps) {
   return (
@@ -24,7 +25,8 @@ export default function ActionForm(props: actorFormProps) {
           <Form>
             <TextField field="name" displayName="Name" />
             <DateField field="dateOfBirth" displayName="Birth Date" />
-            <ImageField displayName="Picture" field="picture" imageURL={props.model.pictureURL} />
+            <ImageField field="picture" displayName="Picture" imageURL={props.model.pictureURL} />
+            <MarkdownField field="biography" displayName="Biography" />
 
             <Button disabled={formikProps.isSubmitting} type="submit">
               Save changes

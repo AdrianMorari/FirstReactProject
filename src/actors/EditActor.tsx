@@ -7,7 +7,8 @@ export default function EditActor() {
       <ActorForm
         model={{ name: 'Tom Hanks',
         dateOfBirth: new Date('1956-07-09'),
-        pictureURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Tom_Hanks_TIFF_2019.jpg/220px-Tom_Hanks_TIFF_2019.jpg'
+        pictureURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Tom_Hanks_TIFF_2019.jpg/220px-Tom_Hanks_TIFF_2019.jpg',
+        biography: '# Tom Hanks \n\n Was borned in **Kentucky**'
       }}
         onSubmit={(values) => console.log(values)}
       />
